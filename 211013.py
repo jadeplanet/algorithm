@@ -4,6 +4,6 @@ N, M = map(int, stdin.readline().split())
 
 target = [stdin.readline().strip() for _ in range(N)]
 container = [stdin.readline().strip() for _ in range(M)]
-result = set([item for item in container if item in target])
+result = [item for item in container if item in target]
 
 print(len(result))
