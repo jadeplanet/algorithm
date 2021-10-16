@@ -9,7 +9,7 @@ def solution(str, num):
             
             # 새로운 아스키코드 값이 알파벳 소문자의 범위(97~122)를 넘어갈 경우
             # 첫 번째 소문자(a)로 되돌아가기
-            if newAscii >= 123:
+            if newAscii > 122:
                 newAscii -= 26
             asciiList.append(newAscii)
 
@@ -20,7 +20,7 @@ def solution(str, num):
 
             # 새로운 아스키코드 값이 알파벳 대문자의 범위(65~90)를 넘어갈 경우
             # 첫 번째 대문자(A)로 되돌아가기
-            if newAscii >= 91:
+            if newAscii > 90:
                 newAscii -= 26
             asciiList.append(newAscii)
         
